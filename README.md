@@ -20,7 +20,7 @@ Follow these steps to set up and run Bagbot:
 *Linux (Windows)*
 ```
 sudo apt update && sudo apt install -y python3.10 python3-pip \
-&& git clone https://github.com/taotemplar/bagbot.git \
+&& git clone https://github.com/Flusskrebs49/bagbot \
 && cd bagbot \
 && python3.10 -m venv .bagbotvirtualenv \
 && source .bagbotvirtualenv/bin/activate
@@ -28,7 +28,7 @@ sudo apt update && sudo apt install -y python3.10 python3-pip \
 *MacOS*
 ```
 brew install python@3.10 \
-&& git clone https://github.com/taotemplar/bagbot.git \
+&& git clone https://github.com/Flusskrebs49/bagbot \
 && cd bagbot \
 && python3.10 -m venv .bagbotvirtualenv \
 && source .bagbotvirtualenv/bin/activate
@@ -57,6 +57,8 @@ brew install python@3.10 \
 #### 8. Edit the Settings File
    In `bagbot_settings_overrides.py`:
    - Update the `WALLET_PW` variable with your wallet's password.
+   - Update your TELEGRAM toker and ChatID
+   - Update the `WALLET_WALLET` variable with the `ss58_address` to monitor
    - Modify other settings as desired. The file includes notes explaining each variable.
    - Add IP of your influx server, database name, user and password
    - Specify the Master wallet to monitor
